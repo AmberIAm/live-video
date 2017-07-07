@@ -1,0 +1,212 @@
+/* style for Ocn Live Video v1.0.0 2017/01/13 Author: Amber Tseng - zengting@sgrand.cn */
+/* reset */
+/* 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+/* Document ========================================================================== */
+html { color: #fff; font-family: "Arial","Microsoft YaHei","SimHei","SimSun",sans-serif; /* 1 */ font-size: 14px; line-height: 1.15; /* 2 */ -ms-text-size-adjust: 100%; /* 3 */ -webkit-text-size-adjust: 100%; /* 3 */ }
+
+/* Sections ========================================================================== */
+/* Remove the margin in all browsers (opinionated). */
+body { margin: 0; }
+
+/* Add the correct display in IE 9-. */
+article, aside, footer, header, nav, section { display: block; }
+
+/* Grouping content ========================================================================== */
+/* Add the correct display in IE 9-. 1. Add the correct display in IE. */
+figcaption, figure, main { /* 1 */ display: block; }
+
+/* Add the correct margin in IE 8. */
+figure { margin: 1em 40px; }
+
+/* 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/* 1. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+ul { list-style: none; margin: 0; padding: 0; }
+
+li { float: left; }
+
+a { -webkit-text-decoration-skip: objects; /* 2 */ text-decoration: none; }
+
+/* Remove the outline on focused links when they are also active or hovered in all browsers (opinionated). */
+a:active, a:hover { outline-width: 0; }
+
+/* Embedded content ========================================================================== */
+/* Add the correct display in IE 9-. */
+audio, video { display: inline-block; }
+
+/* Add the correct display in iOS 4-7. */
+audio:not([controls]) { display: none; height: 0; }
+
+/* Remove the border on images inside links in IE 10-. */
+img { border-style: none; }
+
+/* Forms ========================================================================== */
+/* 1. Change the font styles in all browsers (opinionated). 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea { font-family: "Arial","Microsoft YaHei","SimHei","SimSun",sans-serif; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/* Show the overflow in IE. 1. Show the overflow in Edge. */
+button, input { /* 1 */ overflow: visible; }
+
+/* Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+button, select { /* 1 */ text-transform: none; }
+
+/* 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4. 2. Correct the inability to style clickable types in iOS and Safari. */
+button, html [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; /* 2 */ }
+
+/* Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/* Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/* Change the border, margin, and padding in all browsers (opinionated). */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/* 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/* Remove the default vertical scrollbar in IE. */
+textarea { overflow: auto; }
+
+/* 1. Add the correct box sizing in IE 10-. 2. Remove the padding in IE 10-. */
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/* Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/* 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/* Remove the inner padding and cancel buttons in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in IE 9-. 1. Add the correct display in Edge, IE, and Firefox. */
+details, menu { display: block; }
+
+/* Add the correct display in all browsers. */
+summary { display: list-item; }
+
+/* all */
+body { background-color: #191919; width: 100%;}
+
+/* header */
+.index-header { background-color: #000; height: 60px; }
+.index-header a { color: #fff; display: block; float: right; }
+.index-header a:hover { color: #ffdd00; }
+
+.download-icon { width: 33px; height: 30px; vertical-align: middle; padding-right: 8px; }
+
+.top-header { background-color: #000; height: 60px; line-height: 60px; margin: 0 auto; width: 1366px; }
+
+.back-to-homepage::after { content: " >>"; }
+
+a.download-link { color: yellow; }
+
+.line { display: inline-block; float: right; margin: -1px 10px; font-size: 18px; }
+
+/* navigation images */
+.index-nav { height: 200px; }
+.index-nav img { display: block; height: 200px; margin: 0 auto; }
+
+/* all channels */
+.channel-section { border-top: solid 1px #303030; margin: 0 auto; width: 1128px; clear: left; }
+
+.index-button { margin-top: 8px; margin-bottom: 15px; }
+.index-button a:hover { filter: alpha(opacity=70); -moz-opacity: .7; opacity: .7; }
+
+/* title for channels */
+h1 { font-size: 18px; font-weight: 500; }
+h1 span { color: #B9B9B9; font-size: 14px; margin-left: 10px; }
+
+/* buttons for all TV-stations */
+.button-box, .live-button, .watch-back-button { -moz-border-radius: 5px; border-radius: 5px; color: #fff; display: inline-block; height: 22px; line-height: 22px; text-align: center; width: 60px; }
+
+.live-button { background-color: #FF0000; margin-right: 55px; }
+
+.watch-back-button { background-color: #59483E; }
+
+.yangshi-watch-back { margin-left: 940px; }
+
+/* weishi-section */
+.index-main li { margin-right: 8px; }
+
+.box-sizing-border, .index-footer .foot02 { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* carousel channels */
+#carousel-channels { width: 1128px; height: 284px; position: relative; overflow: hidden; }
+#carousel-channels li { float: left; }
+
+#list { position: absolute; width: 2600px; height: 284px; }
+
+.link-images { display: block; width: 180px; height: 236px; }
+.link-images:hover { filter: alpha(opacity=60); -moz-opacity: .6; opacity: .6; }
+
+.arrow-area, #prev, #next { -moz-border-radius: 2px; border-radius: 2px; background-color: rgba(0, 0, 0, 0.5); width: 40px; height: 40px; position: absolute; top: 95px; z-index: 99; }
+
+.arrow, #prev img, #next img { width: 30px; height: 30px; display: block; margin: 5px auto; }
+
+#prev { left: 8px; }
+
+#next { right: 15px; }
+
+/* footer */
+.index-footer { background-color: #000; clear: left; height: 300px; width: 100%; }
+.index-footer .foot { margin: 0 auto; width: 1128px; background-color: #000; height: 300px; }
+.index-footer .foot01 { margin: 0 auto; text-align: left; width: 1128px; }
+.index-footer .foot02 { float: left; }
+.index-footer .foot02 p { font-size: 18px; font-weight: 500; margin: 22px 0; }
+.index-footer .foot03 { margin: 5px 0px; }
+.index-footer .foot03 a { color: #fff; }
+.index-footer .foot03 img { vertical-align: middle; }
+.index-footer .foot04 { width: 50%; margin: 5px 0px; }
+.index-footer p.contact-us { font-size: 12px; font-weight: 500; line-height: 26px; }
+.index-footer p.about-us-text { font-size: 12px; font-weight: 500; line-height: 26px; }
+
+.related-sites { width: 20%; padding-right: 20px; }
+
+.about-us { width: 30%; padding-right: 70px; }
+
+.any-link { float: left; width: 110px; }
+
+.any-link-02 { margin-right: 60px; }
+
+/* level2 page */
+/* scrollbar */
+::-webkit-scrollbar {/* width: 20px; *//* height: 160px; */}
+
+::-webkit-scrollbar-track {/* background-color: #1b1b1b; */}
+
+/* ::-webkit-scrollbar-thumb:vertical { background-color: #101010; } */
+
+.box-to-center, .level2-nav, .level2-main { width: 1080px; margin: 0 auto; }
+
+/* navigation image */
+.level2-nav { height: 90px; }
+
+/* main content */
+.level2-main { height: 305px; }
+
+/* program */
+.program-section { border-top: solid 1px #303030; padding-top: 12px; margin-top: 20px; }
+.program-section li { -moz-border-radius: 3px; border-radius: 3px; background-color: #222; font-size: 18px; height: 536px; width: 350px; margin-bottom: 30px; }
+
+.program-box-margin { margin-right: 15px; }
+
+.program-title { border-bottom: solid 1px #303030; display: block; font-weight: normal; height: 48px; line-height: 48px; text-align: center; }
+
+.program-content { font-size: 14px; width: 315px; height: 435px; margin-top: 25px; margin-bottom: 25px; margin-left: 33px; overflow-y: auto; scrollbar-base-color: #1b1b1b; scrollbar-track-color: #101010; scrollbar-arrow-color: black; }
+.pro-link { color: #fff; cursor: text; }
+.valLink { color: #ffdd00; text-decoration: underline; cursor: pointer; }
+.outLink { color: #fff; cursor: pointer; }
+
+.link-big-img { display: block; width: 1080px; height: 305px; }
+.link-big-img:hover { filter: alpha(opacity=80); -moz-opacity: .8; opacity: .8; }
+
+/* media */
+@media screen and (max-width:1199px){ .top-header { width: 1128px; } } 

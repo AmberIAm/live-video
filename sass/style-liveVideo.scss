@@ -1,0 +1,178 @@
+// [mixin] area
+@mixin border-radius($border-radius){
+	-moz-border-radius: $border-radius;
+	border-radius: $border-radius;
+}
+@mixin all-filt{
+	filter: alpha(opacity=60); 
+	-moz-opacity: .6; 
+	opacity: .6;
+}
+
+@charset "utf-8";
+
+/* reset */
+@import "normalize";
+
+/* all */
+body {
+	background-color: #191919;
+	width: 100%;
+}
+
+/* header */
+@import "header-liveVideo";
+
+/* navigation images */
+$nav-height: 200px;
+.index-nav {
+	height: $nav-height;
+	img {
+		display: block;
+		height: $nav-height;
+		margin: 0 auto;
+	}
+
+}
+
+/* all channels */
+.channel-section {
+	border-top: solid 1px #303030;
+	margin: 0 auto;
+	width: 1128px;
+	clear: left;
+}
+
+.index-button {
+	margin-top: 8px;
+	margin-bottom: 15px; 
+	a:hover {
+		filter: alpha(opacity=70); 
+		-moz-opacity: .7; 
+		opacity: .7;
+	}
+}
+
+/* title for channels */
+h1 {
+	font-size: 18px;
+	font-weight: 500;
+	span {
+		color: #B9B9B9;
+		font-size: 14px;
+		margin-left: 10px;
+	}
+}
+
+/* buttons for all TV-stations */
+.button-box {
+	@include border-radius(5px);
+	color: #fff;
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	width: 60px;	
+}
+
+.live-button {
+	@extend .button-box;
+	background-color: #FF0000;
+	margin-right: 55px;
+}
+
+.watch-back-button {
+	@extend .button-box;
+	background-color: #59483E;
+}
+
+.yangshi-watch-back {
+	margin-left: 940px;
+}
+
+/* weishi-section */
+.index-main {
+	li {
+		margin-right: 8px;
+	}
+}
+
+.box-sizing-border {
+	-webkit-box-sizing: border-box;
+     	-moz-box-sizing: border-box;
+        	box-sizing: border-box;
+}
+
+/* carousel channels */
+#carousel-channels {
+	width: 1128px; 
+	height: 284px;
+	position: relative;
+	overflow: hidden;
+	li {
+		float: left;
+	}
+}
+
+#list {
+	position: absolute;
+	width: 2600px;
+	height: 284px;	
+}
+
+.link-images {
+	display: block;
+	width: 180px;
+	height: 236px;
+	&:hover {
+		@include all-filt;
+	}
+}
+$arrow-area-size: 40px;
+$arrow-size: 30px;
+
+.arrow-area {
+	@include border-radius(2px);
+	background-color: rgba(0, 0, 0, .5);
+	width: $arrow-area-size;
+	height: $arrow-area-size;
+	position: absolute;
+	top: 95px;
+	z-index: 99;
+}
+
+.arrow {
+	width: $arrow-size;
+	height: $arrow-size;
+	display: block;
+	margin: 5px auto;
+}
+
+#prev {
+	@extend .arrow-area;
+	left: 8px;
+	img {
+		@extend .arrow;
+	}
+}
+
+#next {
+	@extend .arrow-area;
+	right: 15px;
+	img {
+		@extend .arrow;
+	}
+}
+
+/* footer */
+@import "footer-liveVideo";
+
+/* level2 page */
+@import "level2-liveVideo";
+
+/* media */
+@media screen and (max-width:1199px){
+	.top-header {
+		width: 1128px;
+	}
+} 

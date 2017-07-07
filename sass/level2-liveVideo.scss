@@ -1,0 +1,98 @@
+// [mixin] area
+@mixin border-radius($border-radius){
+	-moz-border-radius: $border-radius;
+	border-radius: $border-radius;
+}
+@mixin all-filt{
+	filter: alpha(opacity=80); 
+	-moz-opacity: .8; 
+	opacity: .8;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 20px;
+	height: 160px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #101010;
+}
+
+.box-to-center {
+	width: 1080px; 
+	margin: 0 auto;
+}
+
+/* navigation image */
+.level2-nav {
+	@extend .box-to-center;
+	height: 90px;
+}
+
+/* main content */
+.level2-main {
+	@extend .box-to-center;
+	height: 305px;
+}
+
+/* program */
+.program-section {
+	border-top: solid 1px #303030;
+	padding-top: 12px;
+	margin-top: 20px;
+	li {
+		@include border-radius(3px);
+		background-color: #222;
+		font-size: 18px;
+		height: 536px;
+		width: 350px;
+		margin-bottom: 30px;
+	}
+}
+
+.program-box-margin {
+	margin-right: 15px;	
+}
+
+.program-title {
+	border-bottom: solid 1px #303030;
+	display: block;
+	font-weight: normal;
+	height: 48px;
+ 	line-height: 48px;
+ 	text-align: center;
+}
+
+.program-content {
+	font-size: 14px;
+	width: 315px;
+	height: 435px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 33px;
+	overflow-y: auto;
+	scrollbar-base-color: #1b1b1b;
+    scrollbar-track-color: #101010;
+    scrollbar-arrow-color: black; 
+	a {
+		color: #fff;
+		&:hover {
+			color: #ffdd00;
+			text-decoration: underline;
+		}
+	}
+}
+
+.link-big-img {
+	display: block;
+	width: 1080px;
+	height: 305px;
+	&:hover {
+		@include all-filt;
+	}
+}

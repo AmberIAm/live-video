@@ -1,0 +1,13 @@
+.index-header { height: 60px; background-color: #000; }
+.index-header a { color: #fff; display: block; float: right; }
+.index-header a:hover { color: #ffdd00; }
+
+.download-icon { width: 33px; height: 30px; vertical-align: middle; padding-right: 8px; }
+
+.top-header { background-color: #000; height: 60px; line-height: 60px; margin: 0 auto; width: 1366px; }
+
+.back-to-homepage::after { content: " >>"; }
+
+a.download-link { color: yellow; }
+
+.line { display: inline-block; float: right; margin: -1px 10px; font-size: 18px; }

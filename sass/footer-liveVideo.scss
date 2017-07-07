@@ -1,0 +1,68 @@
+.index-footer {
+	background-color: #000;
+	clear: left;
+	height: 300px;
+	width: 100%;
+	.foot {
+		width: 1128px;
+	    background-color: #000;
+	    height: 300px;
+	    margin: 0 auto;
+	}
+	.foot01 {
+		margin: 0 auto;
+		text-align: left;
+		width: 1128px;
+	}
+	.foot02 {
+		@extend .box-sizing-border;
+		float: left;
+		p {
+			font-size: 18px;
+			font-weight: 500;
+			margin: 22px 0;
+		}
+	}
+	.foot03 {
+		margin:5px 0px;
+		a {
+			color: #fff;
+		}
+		img { 
+			vertical-align:middle;
+		}
+	}
+	.foot04 {
+		width: 50%; 
+		margin: 5px 0px;
+	}
+	p.contact-us {
+		font-size:12px;
+		font-weight:500;
+		line-height:26px;
+	}
+	p.about-us-text {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 26px;
+	}
+}
+
+.related-sites {
+	width: 20%;
+	padding-right: 20px;
+}
+
+.about-us {
+	width: 30%;
+	padding-right: 70px;
+}
+
+.any-link {
+	float: left;
+	width: 110px;
+}
+
+.any-link-02 {
+	margin-right: 60px;
+}
